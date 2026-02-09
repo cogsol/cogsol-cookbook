@@ -4,8 +4,13 @@ Templates and runnable demos for building with the [CogSol Framework](https://gi
 
 ## Repository Layout
 
+Core content:
 - [`templates/`](templates/README.md) contains reusable starter projects.
 - [`examples/`](examples/README.md) contains specific demos, often more complete and complex than templates.
+
+Supporting contributor infrastructure:
+- [`docs/`](docs/) contains reusable README templates for contributors.
+- [`.github/`](.github/) contains issue/PR templates and repository automation.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) explains how to propose and submit community contributions.
 
 ## Catalog

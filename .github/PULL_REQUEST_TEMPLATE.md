@@ -15,4 +15,3 @@ Describe what this PR adds or changes.
 - [ ] I updated `templates/README.md` or `examples/README.md`.
 - [ ] I updated the global catalog in `README.md`.
 - [ ] I verified setup/run instructions are correct.
-- [ ] I followed the project `CODE_OF_CONDUCT.md`.
