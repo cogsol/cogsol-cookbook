@@ -1,0 +1,67 @@
+name: Community Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate template and example docs
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+
+          function Validate-Section {
+            param(
+              [string]$BaseDir,
+              [string]$SectionReadme,
+              [string]$RootReadme,
+              [string[]]$IgnoreDirs
+            )
+
+            $sectionContent = Get-Content -Raw $SectionReadme
+            $rootContent = Get-Content -Raw $RootReadme
+            $errors = @()
+
+            $dirs = Get-ChildItem -Path $BaseDir -Directory | Where-Object {
+              $IgnoreDirs -notcontains $_.Name -and -not $_.Name.StartsWith(".")
+            }
+
+            foreach ($dir in $dirs) {
+              $entryPath = "$BaseDir/$($dir.Name)/README.md"
+              $localReadme = Join-Path $dir.FullName "README.md"
+
+              if (-not (Test-Path $localReadme)) {
+                $errors += "Missing README: $entryPath"
+                continue
+              }
+
+              if ($sectionContent -notmatch [regex]::Escape($entryPath)) {
+                $errors += "Not listed in ${SectionReadme}: $entryPath"
+              }
+
+              if ($rootContent -notmatch [regex]::Escape($entryPath)) {
+                $errors += "Not listed in README.md catalog: $entryPath"
+              }
+            }
+
+            return $errors
+          }
+
+          $allErrors = @()
+          $allErrors += Validate-Section -BaseDir "templates" -SectionReadme "templates/README.md" -RootReadme "README.md" -IgnoreDirs @()
+          $allErrors += Validate-Section -BaseDir "examples" -SectionReadme "examples/README.md" -RootReadme "README.md" -IgnoreDirs @()
+
+          if ($allErrors.Count -gt 0) {
+            $allErrors | ForEach-Object { Write-Error $_ }
+            throw "Community checks failed."
+          }
+
+          Write-Host "Community checks passed."

@@ -1,0 +1,33 @@
+name: Example Proposal
+description: Propose a new scenario demo for the cookbook.
+title: "[Example]: "
+labels:
+  - example
+  - proposal
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Example name
+      placeholder: tool-calling-basics
+    validations:
+      required: true
+  - type: textarea
+    id: concept
+    attributes:
+      label: Scenario demonstrated
+      description: What concrete scenario does this demo cover, and what features does it combine?
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Target audience
+      description: Who should use this example?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add references, links, or implementation notes.

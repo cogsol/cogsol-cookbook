@@ -1,0 +1,33 @@
+name: Template Proposal
+description: Propose a new reusable template for the cookbook.
+title: "[Template]: "
+labels:
+  - template
+  - proposal
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Template name
+      placeholder: python-agent-starter
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem solved
+      description: What user need does this template address?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What will be included in the first version?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add references, links, or implementation notes.
