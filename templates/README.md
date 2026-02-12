@@ -10,7 +10,7 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`pretools`](pretools/README.md) | Agent with pre-processing tools using `BaseTool` as pretools. | Ready |
 
 ## Template Conventions
 
