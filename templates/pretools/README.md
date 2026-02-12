@@ -65,12 +65,12 @@ python manage.py chat --agent PretoolsAgent
 | Agent attribute | `tools = [...]` | `pretools = [...]` |
 | Generation config | `generation_config` | `pregeneration_config` |
 | Execution phase | During main response | Before main response |
-| Typical config | `genconfigs.QA()` | `genconfigs.FastRetrieval()` |
+| Typical config | `genconfigs.QA()` | `genconfigs.QA()` |
 | Base class | `BaseTool` | `BaseTool` (same) |
 
 ## Customization Notes
 
-- **Change location**: Update `LATITUDE`, `LONGITUDE`, and timezone offset in `agents/tools.py` to target a different city.
+- **Change location**: Update the `latitude`, `longitude`, and timezone offset in `agents/tools.py` to target a different city.
 - **Add more pretools**: Create additional `BaseTool` subclasses in `agents/tools.py` and add them to the agent's `pretools` list.
 - **Replace pretools**: Swap the example pretools with your own — user context loaders, session initializers, or any pre-processing logic your agent needs.
 - **Rename the agent**: Update the class name in `agent.py` and `__init__.py`, adjust `Meta.name` and `Meta.chat_name`, then delete the existing migration file and run `python manage.py makemigrations` to generate a fresh migration.

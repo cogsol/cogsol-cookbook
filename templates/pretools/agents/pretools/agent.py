@@ -7,12 +7,13 @@ from ..tools import CurrentDateTimeTool, WeatherInfoTool, DailyTipTool
 class PretoolsAgent(BaseAgent):
     system_prompt = Prompts.load("pretools.md")
     generation_config = genconfigs.QA()
-    pregeneration_config = genconfigs.FastRetrieval()
+    pregeneration_config = genconfigs.QA()
     temperature = 0.3
     max_responses = 10
     max_msg_length = 2048
     max_consecutive_tool_calls = 3
 
+    tools = [CurrentDateTimeTool(), WeatherInfoTool(), DailyTipTool()]
     pretools = [CurrentDateTimeTool(), WeatherInfoTool(), DailyTipTool()]
 
     initial_message = (
