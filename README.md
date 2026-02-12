@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`fixed-responses`](templates/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
