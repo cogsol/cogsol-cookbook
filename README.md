@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`lessons`](templates/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 

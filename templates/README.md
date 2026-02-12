@@ -10,7 +10,7 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
 
 ## Template Conventions
 
