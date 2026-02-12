@@ -52,37 +52,6 @@ class WeatherInfoTool(BaseTool):
         "Open-Meteo API (no API key required)."
     )
 
-    WEATHER_CODES = {
-        0: "Clear sky",
-        1: "Mainly clear",
-        2: "Partly cloudy",
-        3: "Overcast",
-        45: "Fog",
-        48: "Depositing rime fog",
-        51: "Light drizzle",
-        53: "Moderate drizzle",
-        55: "Dense drizzle",
-        61: "Slight rain",
-        63: "Moderate rain",
-        65: "Heavy rain",
-        71: "Slight snow fall",
-        73: "Moderate snow fall",
-        75: "Heavy snow fall",
-        77: "Snow grains",
-        80: "Slight rain showers",
-        81: "Moderate rain showers",
-        82: "Violent rain showers",
-        85: "Slight snow showers",
-        86: "Heavy snow showers",
-        95: "Thunderstorm",
-        96: "Thunderstorm with slight hail",
-        99: "Thunderstorm with heavy hail",
-    }
-
-    # Montevideo coordinates
-    LATITUDE = -34.9011
-    LONGITUDE = -56.1645
-
     def run(self, chat=None, data=None, secrets=None, log=None):
         import json
         import urllib.request
@@ -91,19 +60,49 @@ class WeatherInfoTool(BaseTool):
         if log:
             log("WeatherInfoTool: fetching weather from Open-Meteo API")
 
+        weather_codes = {
+            0: "Clear sky",
+            1: "Mainly clear",
+            2: "Partly cloudy",
+            3: "Overcast",
+            45: "Fog",
+            48: "Depositing rime fog",
+            51: "Light drizzle",
+            53: "Moderate drizzle",
+            55: "Dense drizzle",
+            61: "Slight rain",
+            63: "Moderate rain",
+            65: "Heavy rain",
+            71: "Slight snow fall",
+            73: "Moderate snow fall",
+            75: "Heavy snow fall",
+            77: "Snow grains",
+            80: "Slight rain showers",
+            81: "Moderate rain showers",
+            82: "Violent rain showers",
+            85: "Slight snow showers",
+            86: "Heavy snow showers",
+            95: "Thunderstorm",
+            96: "Thunderstorm with slight hail",
+            99: "Thunderstorm with heavy hail",
+        }
+
+        latitude = -34.9011
+        longitude = -56.1645
+
         url = (
             f"https://api.open-meteo.com/v1/forecast"
-            f"?latitude={self.LATITUDE}&longitude={self.LONGITUDE}"
+            f"?latitude={latitude}&longitude={longitude}"
             f"&current_weather=true"
         )
 
         try:
             with urllib.request.urlopen(url, timeout=5) as response:
-                data = json.loads(response.read().decode())
+                weather_data = json.loads(response.read().decode())
 
-            weather = data["current_weather"]
+            weather = weather_data["current_weather"]
             code = weather.get("weathercode", -1)
-            condition = self.WEATHER_CODES.get(code, "Unknown")
+            condition = weather_codes.get(code, "Unknown")
 
             result = {
                 "temperature_celsius": weather["temperature"],
@@ -135,30 +134,30 @@ class DailyTipTool(BaseTool):
         "automatically based on the current date."
     )
 
-    TIPS = [
-        "Run `makemigrations` before `migrate` to review changes before deploying them.",
-        "Use `genconfigs.QA()` for conversational agents and `genconfigs.FastRetrieval()` for search-focused pretools.",
-        "Keep system prompts in separate Markdown files under prompts/ for easy editing.",
-        "Each tool should do one thing well — split complex logic into multiple tools.",
-        "Use `max_consecutive_tool_calls` to prevent infinite tool-call loops.",
-        "FAQs are matched by semantic similarity, while fixed responses use exact key matching.",
-        "Lessons shape the agent's behavior across all responses — use them for guidelines and best practices.",
-        "Store environment variables in `.env` and never commit credentials to version control.",
-        "Use `python manage.py chat --agent AgentName` to test your agent interactively after deploying.",
-        "Pretools run before the main generation phase — use them to gather context that enriches the agent's response.",
-    ]
-
     def run(self, chat=None, data=None, secrets=None, log=None):
         from datetime import datetime, timezone, timedelta
 
         if log:
             log("DailyTipTool: selecting tip of the day")
 
+        tips = [
+            "Run `makemigrations` before `migrate` to review changes before deploying them.",
+            "Use `genconfigs.QA()` for conversational agents and `genconfigs.FastRetrieval()` for search-focused pretools.",
+            "Keep system prompts in separate Markdown files under prompts/ for easy editing.",
+            "Each tool should do one thing well — split complex logic into multiple tools.",
+            "Use `max_consecutive_tool_calls` to prevent infinite tool-call loops.",
+            "FAQs are matched by semantic similarity, while fixed responses use exact key matching.",
+            "Lessons shape the agent's behavior across all responses — use them for guidelines and best practices.",
+            "Store environment variables in `.env` and never commit credentials to version control.",
+            "Use `python manage.py chat --agent AgentName` to test your agent interactively after deploying.",
+            "Pretools run before the main generation phase — use them to gather context that enriches the agent's response.",
+        ]
+
         tz = timezone(timedelta(hours=-3))
         day_of_year = datetime.now(tz).timetuple().tm_yday
-        tip = self.TIPS[day_of_year % len(self.TIPS)]
+        tip = tips[day_of_year % len(tips)]
 
         if log:
-            log(f"DailyTipTool: tip #{day_of_year % len(self.TIPS) + 1}")
+            log(f"DailyTipTool: tip #{day_of_year % len(tips) + 1}")
 
         return {"tip": tip}
