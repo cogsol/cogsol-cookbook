@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`common-questions`](templates/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 

@@ -10,7 +10,7 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`common-questions`](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ`. | Ready |
 
 ## Template Conventions
 
