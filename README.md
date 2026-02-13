@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`pretools`](templates/pretools/README.md): Agent with pre-processing tools for real-time context (date, weather, daily tips, platform status).
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
