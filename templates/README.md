@@ -10,7 +10,7 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`search-no-filters`](search-no-filters/README.md) | Agent that searches a document collection using `BaseRetrieval` without metadata filters. | Ready |
 
 ## Template Conventions
 

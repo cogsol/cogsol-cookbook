@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`search-no-filters`](templates/search-no-filters/README.md) — Agent that searches a recipe collection using semantic search without metadata filters.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
