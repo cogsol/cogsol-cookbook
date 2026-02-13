@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`message-metadata`](templates/message-metadata/) — Agent that reads message metadata to personalize responses by language, name, and role.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 

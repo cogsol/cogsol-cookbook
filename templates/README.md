@@ -10,7 +10,7 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [message-metadata](message-metadata/) | Agent that reads message metadata to personalize responses by language, name, and role | Available |
 
 ## Template Conventions
 
