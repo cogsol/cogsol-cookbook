@@ -1,7 +1,7 @@
 from cogsol.agents import BaseAgent, genconfigs
 from cogsol.prompts import Prompts
 
-from ..tools import CurrentDateTimeTool, WeatherInfoTool, DailyTipTool
+from ..tools import CurrentDateTimeTool, WeatherInfoTool, DailyTipTool, PlatformStatusTool
 
 
 class PretoolsAgent(BaseAgent):
@@ -13,13 +13,15 @@ class PretoolsAgent(BaseAgent):
     max_msg_length = 2048
     max_consecutive_tool_calls = 3
 
-    pretools = [CurrentDateTimeTool(), WeatherInfoTool(), DailyTipTool()]
+    pretools = [CurrentDateTimeTool(), WeatherInfoTool(), DailyTipTool(), PlatformStatusTool()]
 
     initial_message = (
-        "Hello! I am the Pretools Assistant. I use pre-processing tools "
-        "to gather real-time context before responding. Ask me anything "
-        "and I will include current date, weather, and a daily tip "
-        "in my response."
+        "Hello! I am the Pretools Assistant. "
+        "Before each response, four pretools run automatically: "
+        "one fetches the current date and time, another checks "
+        "the weather in Montevideo, a third picks a daily CogSol tip, "
+        "and the last one reports the platform status. "
+        "Ask me anything and you will see them in action!"
     )
     forced_termination_message = (
         "Thank you for using the Pretools Assistant. "

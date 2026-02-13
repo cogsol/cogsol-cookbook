@@ -135,13 +135,13 @@ class DailyTipTool(BaseTool):
                 "Run `makemigrations` before `migrate` to review changes before deploying them.",
                 "Use `genconfigs.QA()` for conversational agents and `genconfigs.FastRetrieval()` for search-focused pretools.",
                 "Keep system prompts in separate Markdown files under prompts/ for easy editing.",
-                "Each tool should do one thing well — split complex logic into multiple tools.",
+                "Each tool should do one thing well: split complex logic into multiple tools.",
                 "Use `max_consecutive_tool_calls` to prevent infinite tool-call loops.",
                 "FAQs are matched by semantic similarity, while fixed responses use exact key matching.",
-                "Lessons shape the agent's behavior across all responses — use them for guidelines and best practices.",
+                "Lessons shape the agent's behavior across all responses: use them for guidelines and best practices.",
                 "Store environment variables in `.env` and never commit credentials to version control.",
                 "Use `python manage.py chat --agent AgentName` to test your agent interactively after deploying.",
-                "Pretools run before the main generation phase — use them to gather context that enriches the agent's response.",
+                "Pretools run before the main generation phase: use them to gather context that enriches the agent's response.",
             ]
 
             tz = timezone(timedelta(hours=-3))
@@ -155,3 +155,70 @@ class DailyTipTool(BaseTool):
 
         except Exception as exc:
             log.append(f"Error: {exc}")
+
+
+class PlatformStatusTool(BaseTool):
+    """Demonstrates a pretool that creates tool messages.
+
+    Instead of adding data to the prompt context, this pretool injects
+    an assistant tool-call message and a tool response message into the
+    conversation history. The model sees these as a prior tool
+    invocation and can reference the result in its response.
+    """
+
+    name = "platform_status"
+    description = (
+        "Checks the current CogSol platform status and injects the "
+        "result as tool messages in the conversation."
+    )
+    show_tool_message = False
+
+    def run(self, chat=None, data=None, secrets=None, log=None):
+        try:
+            import json
+            from datetime import datetime, timezone, timedelta
+            from django.apps import apps
+
+            log.append("Checking platform status")
+
+            tz = timezone(timedelta(hours=-3))
+            now = datetime.now(tz)
+            uptime_seed = now.timetuple().tm_yday % 5
+            uptime = ["99.95%", "99.97%", "99.98%", "99.99%", "100%"][uptime_seed]
+
+            status = (
+                f"All systems operational. "
+                f"API response time: 42ms. "
+                f"Uptime this month: {uptime}."
+            )
+
+            Message = apps.get_model("assistant", "Message")
+            last_msg = chat.messages.all().order_by("msg_num").last()
+            tool_call_id = "platform_status_1"
+
+            Message.objects.create(
+                role="assistant",
+                visible=False,
+                content="tool call",
+                chat=chat,
+                msg_num=last_msg.msg_num + 1,
+                function_name="platform_status",
+                metadata=json.loads("{}"),
+                tool_call_id=tool_call_id,
+            )
+
+            Message.objects.create(
+                role="tool",
+                visible=False,
+                content=status,
+                chat=chat,
+                msg_num=last_msg.msg_num + 2,
+                function_name="platform_status",
+                metadata=json.loads("{}"),
+                tool_call_id=tool_call_id,
+            )
+
+            log.append(f"Platform status injected: {status}")
+
+        except Exception as exc:
+            log.append(f"Error checking platform status: {exc}")
