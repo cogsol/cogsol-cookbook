@@ -12,9 +12,9 @@ class LessonsDocsAgent(BaseAgent):
 
     initial_message = (
         "Hello! I am the Lessons Docs Assistant. "
-        "Ask me about best practices for building projects, "
-        "designing agents, writing prompts, or working with "
-        "tools in the CogSol Framework."
+        "Ask me about the CogSol platform: assistant configuration, "
+        "tools and searches, content management, troubleshooting, "
+        "or evaluation and improvement."
     )
     forced_termination_message = (
         "Thank you for using the Lessons Docs Assistant. "
