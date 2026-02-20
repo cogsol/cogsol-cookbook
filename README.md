@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 

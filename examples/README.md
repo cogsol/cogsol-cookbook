@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |
+<!-- CI: examples/semantic-search/README.md -->
 
 ## Example Conventions
 
