@@ -8,6 +8,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.CreateTopic(name='recipes', fields={'name': 'recipes'}, meta={'description': 'Collection of recipes for semantic search'}),
         migrations.CreateReferenceFormatter(name='recipe_formatter', fields={'name': 'recipe_formatter', 'description': 'Reference format for recipe documents.', 'expression': '[{name}]'}),
-        migrations.CreateIngestionConfig(name='recipe_ingestion', fields={'name': 'recipe_ingestion', 'pdf_parsing_mode': 'manual', 'chunking_mode': 'langchain', 'max_size_block': 2500, 'chunk_overlap': 100, 'separators': [], 'ocr': False, 'additional_prompt_instructions': '', 'assign_paths_as_metadata': False}),
-        migrations.CreateRetrieval(name='recipe_search', fields={'name': 'recipe_search', 'num_refs': 5, 'max_msg_length': 570, 'reordering': False, 'strategy_reordering': None, 'previous_blocks': 1, 'next_blocks': 1, 'contingency_for_embedding': True, 'threshold_similarity': 0.7, 'formatters': {'Markdown': 'recipe_formatter'}, 'filters': [], 'topic': 'recipes'}),
+        migrations.CreateIngestionConfig(name='recipe_ingestion', fields={'name': 'recipe_ingestion', 'chunking_mode': 'langchain', 'max_size_block': 2500, 'chunk_overlap': 300, 'separators': ['\n\n', '\n', ' ']}),
+        migrations.CreateRetrieval(name='recipe_search', fields={'name': 'recipe_search', 'num_refs': 5, 'max_msg_length': 1800, 'reordering': False, 'strategy_reordering': None, 'previous_blocks': 1, 'next_blocks': 1, 'contingency_for_embedding': True, 'threshold_similarity': 0.7, 'formatters': {'Markdown': 'recipe_formatter'}, 'filters': [], 'topic': 'recipes'}),
     ]

@@ -9,7 +9,7 @@ class RecipeRetrieval(BaseRetrieval):
     topic = RecipesTopic
 
     num_refs = 5
-    max_msg_length = 570
+    max_msg_length = 1800
 
     reordering = False
     strategy_reordering = ReorderingStrategy.NONE

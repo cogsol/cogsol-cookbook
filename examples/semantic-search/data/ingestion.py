@@ -1,13 +1,9 @@
-from cogsol.content import BaseIngestionConfig, PDFParsingMode, ChunkingMode
+from cogsol.content import BaseIngestionConfig, ChunkingMode
 
 
 class RecipeIngestionConfig(BaseIngestionConfig):
     name = "recipe_ingestion"
-    pdf_parsing_mode = PDFParsingMode.MANUAL
     chunking_mode = ChunkingMode.LANGCHAIN
     max_size_block = 2500
-    chunk_overlap = 100
-    separators = []
-    ocr = False
-    additional_prompt_instructions = ""
-    assign_paths_as_metadata = False
+    chunk_overlap = 300
+    separators = ["\n\n", "\n", " "]
