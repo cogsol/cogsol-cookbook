@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [common-questions](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ` | Ready |
+<!-- CI: examples/common-questions/README.md -->
 
 ## Example Conventions
 
