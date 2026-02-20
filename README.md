@@ -44,3 +44,7 @@ For full contribution steps, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 2. Submit a pull request using the repository PR template.
 3. Ensure local docs are present and index entries are updated.
 4. Automated checks verify that new folders include `README.md` and are listed in catalogs.
+
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
