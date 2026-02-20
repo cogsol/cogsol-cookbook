@@ -4,6 +4,7 @@ from data.retrievals import RecipeRetrieval
 
 
 class RecipeSearch(BaseRetrievalTool):
+    name = "RecipeSearch"
     description = "Search recipes by ingredients, cuisine, dish type, or any food-related query."
     retrieval = RecipeRetrieval
     parameters = []
