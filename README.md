@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`message-metadata`](examples/message-metadata/README.md) — Agent that reads message metadata to personalize responses by language, name, and role.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
