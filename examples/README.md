@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
+<!-- CI: examples/lessons/README.md -->
 
 ## Example Conventions
 
