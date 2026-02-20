@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
