@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [fixed-responses](fixed-responses/README.md) | Agent with predefined answers using `BaseFixedResponse` | Ready |
+<!-- CI: examples/fixed-responses/README.md -->
 
 ## Example Conventions
 

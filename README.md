@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
