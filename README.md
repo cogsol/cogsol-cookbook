@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`search-selector`](templates/search-selector/README.md) — Agent with a script tool that dynamically routes queries to retrievals by topic.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
