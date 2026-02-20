@@ -10,7 +10,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`search-selector`](search-selector/README.md) | Agent with a script tool that dynamically routes queries to retrievals by topic. | Ready |
+<!-- CI: templates/search-selector/README.md -->
 
 ## Template Conventions
 
