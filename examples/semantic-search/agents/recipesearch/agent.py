@@ -12,7 +12,7 @@ class RecipeSearchAgent(BaseAgent):
     max_msg_length = 2048
     max_consecutive_tool_calls = 3
 
-    tools = [RecipeSearch()]
+    tools = [RecipeSearch]
 
     initial_message = (
         "Hello! I am the Recipe Search Assistant. "
