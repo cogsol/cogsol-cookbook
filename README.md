@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`semantic-search`](templates/semantic-search/README.md) — Starting point for building a semantic search agent over your own documents.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
