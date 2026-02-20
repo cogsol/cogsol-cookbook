@@ -10,7 +10,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |
+<!-- CI: templates/semantic-search/README.md -->
 
 ## Template Conventions
 

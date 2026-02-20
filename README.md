@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`semantic-search`](templates/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
