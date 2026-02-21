@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`search-with-filters`](examples/search-with-filters/README.md) - Semantic search with metadata filters (genre, language, decade)
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
