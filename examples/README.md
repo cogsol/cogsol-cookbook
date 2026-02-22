@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [message-metadata](message-metadata/README.md) | Agent that reads message metadata to personalize responses by language, name, and role | Ready |
+<!-- CI: examples/message-metadata/README.md -->
 
 ## Example Conventions
 
