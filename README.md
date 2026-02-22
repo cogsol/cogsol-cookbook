@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 

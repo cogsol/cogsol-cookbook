@@ -11,7 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [search-selector](search-selector/README.md) | Script tool routing queries to multiple retrievals by topic | Ready |
+<!-- CI: examples/search-selector/README.md -->
 
 ## Example Conventions
 
