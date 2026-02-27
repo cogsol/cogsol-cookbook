@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
 <!-- CI: templates/orchestrator-subagents/README.md -->
+| [`external-api`](external-api/README.md) | Script tool that calls an external API using `requests` and platform secrets. | Ready |
+<!-- CI: templates/external-api/README.md -->
 
 ## Template Conventions
 
