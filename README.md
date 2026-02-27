@@ -17,7 +17,7 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
