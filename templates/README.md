@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
 <!-- CI: templates/orchestrator-subagents/README.md -->
+| [`excel-query`](excel-query/README.md) | Script tool that reads Excel files from chat attachments and answers questions about the data. | Ready |
+<!-- CI: templates/excel-query/README.md -->
 
 ## Template Conventions
 
