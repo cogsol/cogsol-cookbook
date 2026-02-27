@@ -18,6 +18,7 @@ Supporting contributor infrastructure:
 ### Templates
 
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
+- [`azure-storage-upload`](templates/azure-storage-upload/README.md) — Script tool that generates text documents and uploads them to Azure Blob Storage.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
