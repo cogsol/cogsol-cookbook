@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
 <!-- CI: templates/orchestrator-subagents/README.md -->
+| [`sharepoint-upload`](sharepoint-upload/README.md) | Script tool that generates text documents and uploads them to SharePoint via Microsoft Graph API. | Ready |
+<!-- CI: templates/sharepoint-upload/README.md -->
 
 ## Template Conventions
 
