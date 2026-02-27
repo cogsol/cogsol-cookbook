@@ -23,6 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
+- [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
 - [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
 - [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
 
