@@ -11,6 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [common-questions](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ` | Ready |
+<!-- CI: examples/common-questions/README.md -->
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Corporate travel assistant with orchestrator + sub-agents pattern. | Ready |
 <!-- CI: examples/orchestrator-subagents/README.md -->
 | [fixed-responses](fixed-responses/README.md) | Agent with predefined answers using `BaseFixedResponse` | Ready |

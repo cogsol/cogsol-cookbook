@@ -23,6 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
+- [`common-questions`](examples/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.
 - [`orchestrator-subagents`](examples/orchestrator-subagents/README.md) — Corporate travel assistant with orchestrator + sub-agents pattern.
 - [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
 - [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
