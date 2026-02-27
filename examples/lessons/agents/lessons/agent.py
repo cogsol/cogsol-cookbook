@@ -17,8 +17,7 @@ class LessonsDocsAgent(BaseAgent):
         "or evaluation and improvement."
     )
     forced_termination_message = (
-        "Thank you for using the Lessons Docs Assistant. "
-        "Visit https://docs.cogsol.ai for the full reference."
+        "We are ending this conversation to preserve security and integrity."
     )
     no_information_message = (
         "I don't have specific information about that topic. "
