@@ -11,6 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [`orchestrator-subagents`](orchestrator-subagents/README.md) | Corporate travel assistant with orchestrator + sub-agents pattern. | Ready |
+<!-- CI: examples/orchestrator-subagents/README.md -->
 | [fixed-responses](fixed-responses/README.md) | Agent with predefined answers using `BaseFixedResponse` | Ready |
 <!-- CI: examples/fixed-responses/README.md -->
 | [search-selector](search-selector/README.md) | Script tool routing queries to multiple retrievals by topic | Ready |
