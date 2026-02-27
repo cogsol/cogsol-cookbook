@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
 <!-- CI: templates/orchestrator-subagents/README.md -->
+| [`sharepoint-excel`](sharepoint-excel/README.md) | Script tool that queries Excel files in SharePoint via Microsoft Graph API. | Ready |
+<!-- CI: templates/sharepoint-excel/README.md -->
 
 ## Template Conventions
 

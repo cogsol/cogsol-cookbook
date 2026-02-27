@@ -18,6 +18,7 @@ Supporting contributor infrastructure:
 ### Templates
 
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
+- [`sharepoint-excel`](templates/sharepoint-excel/README.md) — Script tool that queries Excel files in SharePoint via Microsoft Graph API.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
