@@ -24,6 +24,8 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 ### Examples
 
 - [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
+- [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
+
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 

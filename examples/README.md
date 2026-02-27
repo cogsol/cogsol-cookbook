@@ -13,6 +13,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [search-selector](search-selector/README.md) | Script tool routing queries to multiple retrievals by topic | Ready |
 <!-- CI: examples/search-selector/README.md -->
+| [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
+<!-- CI: examples/lessons/README.md -->
 
 ## Example Conventions
 
