@@ -23,7 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
-No examples yet.
+- [`orchestrator-subagents`](examples/orchestrator-subagents/README.md) — Corporate travel assistant with orchestrator + sub-agents pattern.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
