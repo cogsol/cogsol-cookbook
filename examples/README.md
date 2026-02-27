@@ -11,7 +11,16 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Scenario demos will be listed here. | Planned |
+| [common-questions](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ` | Ready |
+<!-- CI: examples/common-questions/README.md -->
+| [`orchestrator-subagents`](orchestrator-subagents/README.md) | Corporate travel assistant with orchestrator + sub-agents pattern. | Ready |
+<!-- CI: examples/orchestrator-subagents/README.md -->
+| [fixed-responses](fixed-responses/README.md) | Agent with predefined answers using `BaseFixedResponse` | Ready |
+<!-- CI: examples/fixed-responses/README.md -->
+| [search-selector](search-selector/README.md) | Script tool routing queries to multiple retrievals by topic | Ready |
+<!-- CI: examples/search-selector/README.md -->
+| [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
+<!-- CI: examples/lessons/README.md -->
 
 ## Example Conventions
 

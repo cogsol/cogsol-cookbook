@@ -10,7 +10,10 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Template | Description | Status |
 | --- | --- | --- |
-| _None yet_ | Starter templates will be listed here. | Planned |
+| [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
+<!-- CI: templates/orchestrator-subagents/README.md -->
+| [`azure-storage-upload`](azure-storage-upload/README.md) | Script tool that generates text documents and uploads them to Azure Blob Storage. | Ready |
+<!-- CI: templates/azure-storage-upload/README.md -->
 
 ## Template Conventions
 
