@@ -11,6 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [`pretools`](pretools/README.md) | Agent with pre-processing tools for real-time context. | Ready |
+<!-- CI: examples/pretools/README.md -->
 | [common-questions](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ` | Ready |
 <!-- CI: examples/common-questions/README.md -->
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Corporate travel assistant with orchestrator + sub-agents pattern. | Ready |
