@@ -17,13 +17,17 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
 ### Examples
 
 - [`orchestrator-subagents`](examples/orchestrator-subagents/README.md) — Corporate travel assistant with orchestrator + sub-agents pattern.
+- [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
+- [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
+- [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
+
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
