@@ -29,6 +29,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 - [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
 - [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
 - [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
+- [`support-escalation`](examples/support-escalation/README.md) — IT help desk with fixed responses, FAQs, semantic search, and ticket creation.
 
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
