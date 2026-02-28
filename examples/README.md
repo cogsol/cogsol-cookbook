@@ -23,6 +23,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: examples/search-selector/README.md -->
 | [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
 <!-- CI: examples/lessons/README.md -->
+| [`support-escalation`](support-escalation/README.md) | IT help desk with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
+<!-- CI: examples/support-escalation/README.md -->
 
 ## Example Conventions
 
