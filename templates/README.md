@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
 <!-- CI: templates/orchestrator-subagents/README.md -->
+| [`support-escalation`](support-escalation/README.md) | Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
+<!-- CI: templates/support-escalation/README.md -->
 
 ## Template Conventions
 
