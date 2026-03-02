@@ -12,6 +12,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [`semantic-search`](semantic-search/README.md) | Starting point for building a semantic search agent over your own documents. | Ready |
 <!-- CI: templates/semantic-search/README.md -->
+| [`orchestrator-subagents`](orchestrator-subagents/README.md) | Orchestrator agent that delegates to specialist sub-agents via built-in assistant services. | Ready |
+<!-- CI: templates/orchestrator-subagents/README.md -->
 
 ## Template Conventions
 
