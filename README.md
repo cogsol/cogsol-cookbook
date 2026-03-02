@@ -23,6 +23,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
+- [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 - [`pretools`](examples/pretools/README.md) — Agent with pre-processing tools for real-time context (date, weather, daily tips).
 - [`common-questions`](examples/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.
 - [`orchestrator-subagents`](examples/orchestrator-subagents/README.md) — Corporate travel assistant with orchestrator + sub-agents pattern.
