@@ -17,16 +17,14 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-<<<<<<< template-13-semantic-search
 - [`semantic-search`](templates/semantic-search/README.md) — Starting point for building a semantic search agent over your own documents.
-=======
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
->>>>>>> main
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
 ### Examples
 
+- [`search-with-filters`](examples/search-with-filters/README.md) - Semantic search with metadata filters (genre, language, decade)
 - [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 - [`pretools`](examples/pretools/README.md) — Agent with pre-processing tools for real-time context (date, weather, daily tips).
 - [`common-questions`](examples/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.

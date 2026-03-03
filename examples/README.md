@@ -11,6 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [search-with-filters](search-with-filters/README.md) | Semantic search with metadata filters using `BaseRetrieval`, `BaseMetadataConfig`, and `BaseRetrievalTool` | Ready |
+<!-- CI: examples/search-with-filters/README.md -->
 | [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |
 <!-- CI: examples/semantic-search/README.md -->
 | [`pretools`](pretools/README.md) | Agent with pre-processing tools for real-time context. | Ready |
