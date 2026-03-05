@@ -17,11 +17,9 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-<<<<<<< template-13-semantic-search
 - [`semantic-search`](templates/semantic-search/README.md) — Starting point for building a semantic search agent over your own documents.
-=======
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
->>>>>>> main
+- [`support-escalation`](templates/support-escalation/README.md) — Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
