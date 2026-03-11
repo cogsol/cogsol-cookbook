@@ -16,6 +16,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: templates/orchestrator-subagents/README.md -->
 | [`support-escalation`](support-escalation/README.md) | Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
 <!-- CI: templates/support-escalation/README.md -->
+| [`azure-storage-upload`](azure-storage-upload/README.md) | Script tool that generates text documents and uploads them to Azure Blob Storage. | Ready |
+<!-- CI: templates/azure-storage-upload/README.md -->
 
 ## Template Conventions
 
