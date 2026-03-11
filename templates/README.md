@@ -16,6 +16,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: templates/orchestrator-subagents/README.md -->
 | [`support-escalation`](support-escalation/README.md) | Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
 <!-- CI: templates/support-escalation/README.md -->
+| [`external-api`](external-api/README.md) | Script tool that calls an external API using `requests` and platform secrets. | Ready |
+<!-- CI: templates/external-api/README.md -->
 
 ## Template Conventions
 
