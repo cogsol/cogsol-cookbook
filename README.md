@@ -20,6 +20,7 @@ Supporting contributor infrastructure:
 - [`semantic-search`](templates/semantic-search/README.md) — Starting point for building a semantic search agent over your own documents.
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
 - [`support-escalation`](templates/support-escalation/README.md) — Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation.
+- [`excel-query`](templates/excel-query/README.md) — Script tool that reads Excel files from chat attachments and answers questions about the data.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 

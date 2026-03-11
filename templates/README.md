@@ -16,6 +16,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: templates/orchestrator-subagents/README.md -->
 | [`support-escalation`](support-escalation/README.md) | Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
 <!-- CI: templates/support-escalation/README.md -->
+| [`excel-query`](excel-query/README.md) | Script tool that reads Excel files from chat attachments and answers questions about the data. | Ready |
+<!-- CI: templates/excel-query/README.md -->
 
 ## Template Conventions
 
