@@ -42,7 +42,7 @@ python manage.py chat --agent MessageMetadataAgent
 
 The CLI does not support sending metadata. To test the full metadata flow:
 
-1. Open the agent in the CogSol platform.
+1. Open <https://platform.cogsol.ai/>, click **Chats with your assistants** in the footer, and select your agent.
 2. Tap the **{}** button next to the message input.
 3. Add a metadata entry: key `user_id`, value `USR-001`.
 4. Send any message and observe the personalized response.

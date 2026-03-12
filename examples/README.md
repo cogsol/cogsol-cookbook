@@ -13,6 +13,24 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 | --- | --- | --- |
 | [message-metadata](message-metadata/README.md) | Agent that reads message metadata to personalize responses by language, name, and role | Ready |
 <!-- CI: examples/message-metadata/README.md -->
+| [search-with-filters](search-with-filters/README.md) | Semantic search with metadata filters using `BaseRetrieval`, `BaseMetadataConfig`, and `BaseRetrievalTool` | Ready |
+<!-- CI: examples/search-with-filters/README.md -->
+| [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |
+<!-- CI: examples/semantic-search/README.md -->
+| [`pretools`](pretools/README.md) | Agent with pre-processing tools for real-time context. | Ready |
+<!-- CI: examples/pretools/README.md -->
+| [common-questions](common-questions/README.md) | Agent with predefined FAQ answers using `BaseFAQ` | Ready |
+<!-- CI: examples/common-questions/README.md -->
+| [`orchestrator-subagents`](orchestrator-subagents/README.md) | Corporate travel assistant with orchestrator + sub-agents pattern. | Ready |
+<!-- CI: examples/orchestrator-subagents/README.md -->
+| [fixed-responses](fixed-responses/README.md) | Agent with predefined answers using `BaseFixedResponse` | Ready |
+<!-- CI: examples/fixed-responses/README.md -->
+| [search-selector](search-selector/README.md) | Script tool routing queries to multiple retrievals by topic | Ready |
+<!-- CI: examples/search-selector/README.md -->
+| [`lessons`](lessons/README.md) | Agent with behavioral guidelines using `BaseLesson`. | Ready |
+<!-- CI: examples/lessons/README.md -->
+| [`support-escalation`](support-escalation/README.md) | IT help desk with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
+<!-- CI: examples/support-escalation/README.md -->
 
 ## Example Conventions
 

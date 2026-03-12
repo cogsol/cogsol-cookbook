@@ -17,13 +17,26 @@ Supporting contributor infrastructure:
 
 ### Templates
 
-No templates yet.
+- [`semantic-search`](templates/semantic-search/README.md) — Starting point for building a semantic search agent over your own documents.
+- [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
+- [`support-escalation`](templates/support-escalation/README.md) — Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation.
+- [`external-api`](templates/external-api/README.md) — Script tool that calls an external API using `requests` and platform secrets.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
 ### Examples
 
 - [`message-metadata`](examples/message-metadata/README.md) — Agent that reads message metadata to personalize responses by language, name, and role.
+- [`search-with-filters`](examples/search-with-filters/README.md) - Semantic search with metadata filters (genre, language, decade)
+- [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
+- [`pretools`](examples/pretools/README.md) — Agent with pre-processing tools for real-time context (date, weather, daily tips).
+- [`common-questions`](examples/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.
+- [`orchestrator-subagents`](examples/orchestrator-subagents/README.md) — Corporate travel assistant with orchestrator + sub-agents pattern.
+- [`fixed-responses`](examples/fixed-responses/README.md) — Agent with predefined answers using `BaseFixedResponse`.
+- [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
+- [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
+- [`support-escalation`](examples/support-escalation/README.md) — IT help desk with fixed responses, FAQs, semantic search, and ticket creation.
+
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
