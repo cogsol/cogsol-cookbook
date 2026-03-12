@@ -1,6 +1,7 @@
 from cogsol.content import BaseRetrieval, ReorderingStrategy
 
 from data.knowledgebase import KnowledgeBaseTopic
+from data.knowledgebase.metadata import CategoryMetadata
 from data.formatters import HelpDeskFormatter
 
 
@@ -23,4 +24,4 @@ class HelpDeskRetrieval(BaseRetrieval):
     formatters = {
         "Markdown": HelpDeskFormatter,
     }
-    filters = []
+    filters = [CategoryMetadata]
