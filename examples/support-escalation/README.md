@@ -41,8 +41,8 @@ python manage.py migrate data
 # 4. Deploy agent to CogSol API
 python manage.py migrate agents
 
-# 5. Ingest the IT knowledge base articles
-python manage.py ingest knowledgebase data/knowledgebase/docs/ --ingestion-config helpdesk_ingestion --doc-type Markdown
+# 5. Ingest the IT knowledge base articles (with category metadata)
+python scripts/ingest_knowledgebase.py
 
 # 6. Chat with the agent
 python manage.py chat --agent SupportEscalationAgent
@@ -77,6 +77,7 @@ Other fixed response keys you can try: `contact_info`, `office_locations`, `emer
 | `data/ingestion.py` | `HelpDeskIngestionConfig` for document parsing |
 | `data/retrievals.py` | `HelpDeskRetrieval` configuring semantic search |
 | `data/knowledgebase/docs/*.md` | 8 IT knowledge base articles |
+| `scripts/ingest_knowledgebase.py` | Script to upload articles with per-document category metadata |
 
 ### Escalation Flow
 

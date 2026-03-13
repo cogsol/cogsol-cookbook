@@ -18,6 +18,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: templates/support-escalation/README.md -->
 | [`azure-storage-upload`](azure-storage-upload/README.md) | Script tool that generates text documents and uploads them to Azure Blob Storage. | Ready |
 <!-- CI: templates/azure-storage-upload/README.md -->
+| [`external-api`](external-api/README.md) | Script tool that calls an external API using `requests` and platform secrets. | Ready |
+<!-- CI: templates/external-api/README.md -->
 
 ## Template Conventions
 
