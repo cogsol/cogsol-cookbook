@@ -27,6 +27,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: examples/lessons/README.md -->
 | [`support-escalation`](support-escalation/README.md) | IT help desk with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
 <!-- CI: examples/support-escalation/README.md -->
+| [`excel-query`](excel-query/README.md) | Expense report review using a script tool that queries Excel attachments with pandas. | Ready |
+<!-- CI: examples/excel-query/README.md -->
 
 ## Example Conventions
 
