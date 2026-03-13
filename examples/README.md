@@ -11,6 +11,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [message-metadata](message-metadata/README.md) | Agent that reads message metadata to personalize responses by language, name, and role | Ready |
+<!-- CI: examples/message-metadata/README.md -->
 | [search-with-filters](search-with-filters/README.md) | Semantic search with metadata filters using `BaseRetrieval`, `BaseMetadataConfig`, and `BaseRetrievalTool` | Ready |
 <!-- CI: examples/search-with-filters/README.md -->
 | [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |

@@ -27,6 +27,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 
 ### Examples
 
+- [`message-metadata`](examples/message-metadata/README.md) — Agent that reads message metadata to personalize responses by language, name, and role.
 - [`search-with-filters`](examples/search-with-filters/README.md) - Semantic search with metadata filters (genre, language, decade)
 - [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 - [`pretools`](examples/pretools/README.md) — Agent with pre-processing tools for real-time context (date, weather, daily tips).
