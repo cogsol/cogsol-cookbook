@@ -11,6 +11,10 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
 | Example | Description | Status |
 | --- | --- | --- |
+| [message-metadata](message-metadata/README.md) | Agent that reads message metadata to personalize responses by language, name, and role | Ready |
+<!-- CI: examples/message-metadata/README.md -->
+| [search-with-filters](search-with-filters/README.md) | Semantic search with metadata filters using `BaseRetrieval`, `BaseMetadataConfig`, and `BaseRetrievalTool` | Ready |
+<!-- CI: examples/search-with-filters/README.md -->
 | [`semantic-search`](semantic-search/README.md) | Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`. | Ready |
 <!-- CI: examples/semantic-search/README.md -->
 | [`pretools`](pretools/README.md) | Agent with pre-processing tools for real-time context. | Ready |
@@ -27,6 +31,8 @@ Want to contribute one? Start with [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 <!-- CI: examples/lessons/README.md -->
 | [`support-escalation`](support-escalation/README.md) | IT help desk with fixed responses, FAQs, semantic search, and ticket creation. | Ready |
 <!-- CI: examples/support-escalation/README.md -->
+| [`excel-query`](excel-query/README.md) | Expense report review using a script tool that queries Excel attachments with pandas. | Ready |
+<!-- CI: examples/excel-query/README.md -->
 
 ## Example Conventions
 

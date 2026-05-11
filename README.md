@@ -21,11 +21,15 @@ Supporting contributor infrastructure:
 - [`orchestrator-subagents`](templates/orchestrator-subagents/README.md) — Orchestrator agent that delegates to specialist sub-agents via built-in assistant services.
 - [`support-escalation`](templates/support-escalation/README.md) — Multi-layer escalation flow with fixed responses, FAQs, semantic search, and ticket creation.
 - [`excel-query`](templates/excel-query/README.md) — Script tool that reads Excel files from chat attachments and answers questions about the data.
+- [`azure-storage-upload`](templates/azure-storage-upload/README.md) — Script tool that generates text documents and uploads them to Azure Blob Storage.
+- [`external-api`](templates/external-api/README.md) — Script tool that calls an external API using `requests` and platform secrets.
 
 See [`templates/README.md`](templates/README.md) for the template index and conventions.
 
 ### Examples
 
+- [`message-metadata`](examples/message-metadata/README.md) — Agent that reads message metadata to personalize responses by language, name, and role.
+- [`search-with-filters`](examples/search-with-filters/README.md) - Semantic search with metadata filters (genre, language, decade)
 - [`semantic-search`](examples/semantic-search/README.md) — Semantic search without filters using `BaseRetrieval` and `BaseRetrievalTool`.
 - [`pretools`](examples/pretools/README.md) — Agent with pre-processing tools for real-time context (date, weather, daily tips).
 - [`common-questions`](examples/common-questions/README.md) — Agent with predefined FAQ answers using `BaseFAQ`.
@@ -34,7 +38,7 @@ See [`templates/README.md`](templates/README.md) for the template index and conv
 - [`search-selector`](examples/search-selector/README.md) - Script tool routing queries to multiple retrievals by topic
 - [`lessons`](examples/lessons/README.md) — Agent with behavioral guidelines using `BaseLesson`.
 - [`support-escalation`](examples/support-escalation/README.md) — IT help desk with fixed responses, FAQs, semantic search, and ticket creation.
-
+- [`excel-query`](examples/excel-query/README.md) — Expense report review using a script tool that queries Excel attachments with pandas.
 
 See [`examples/README.md`](examples/README.md) for the example index and conventions.
 
