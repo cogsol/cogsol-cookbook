@@ -50,8 +50,7 @@ cp .env.example .env
 python manage.py migrate agents
 
 # 4. Chat with the agent
-python manage.py chat --agent ExpenseReviewAgent
-```
+In this case, you will need to attach files so please use https://chat.cogsol.ai, instead of CLI
 
 ## Expected Outcome
 
